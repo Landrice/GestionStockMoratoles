@@ -1,0 +1,8 @@
+.download-table-row {    
+}
+.download-table-row:finished {
+    -base-color: greenyellow;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to bottom, derive(-base-color, 50%) 0%, derive(-base-color, -10%) 100%);
+}
+

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="608.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleurGui.home.HomeController">
+   <children>
+      <BorderPane layoutX="272.0" layoutY="148.0" prefHeight="540.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="111.0" prefWidth="683.0" style="-fx-border-color: #00c2f2; -fx-border-style: solid; -fx-border-width: 0px 0px 5px;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="194.0" layoutY="28.0" prefHeight="133.0" prefWidth="831.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="106.0" prefWidth="469.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="357.0" prefWidth="683.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <HBox alignment="CENTER" layoutX="177.0" layoutY="165.0" prefHeight="344.0" prefWidth="683.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="392.0" prefWidth="648.0">
+                           <children>
+                              <ImageView fx:id="smallImg" fitHeight="128.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="264.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="521.0" AnchorPane.topAnchor="0.0" />
+                              <VBox layoutX="215.0" layoutY="73.0" prefHeight="392.0" prefWidth="648.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Label fx:id="lblOrgName" alignment="CENTER" prefHeight="55.0" prefWidth="641.0" text="Gestionnaires des Stock">
+                                       <font>
+                                          <Font name="Comic Sans MS Bold" size="27.0" />
+                                       </font>
+                                    </Label>
+                                    <Text fx:id="txtOrgAddress" strokeType="OUTSIDE" strokeWidth="0.0" text="QUINCALLERIE MORATÔLES" textAlignment="CENTER" wrappingWidth="647.7294921875">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font></Text>
+                                    <Text fx:id="txtorgPhoneNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="Avenue Pasteur - Tél. 032 05 097 12" textAlignment="CENTER" wrappingWidth="647.7294921875">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font></Text>
+                                 </children>
+                              </VBox>
+                              <GridPane layoutX="10.0" layoutY="115.0" prefHeight="274.0" prefWidth="620.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="212.0" />
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="226.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="10.0" prefWidth="73.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="108.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="Nombre des clients" GridPane.rowIndex="5" />
+                                    <Label text="Nombre des utilisateurs :" GridPane.rowIndex="6" />
+                                    <Label text="Total des produits :" />
+                                    <Label text="Total des Tôles" GridPane.rowIndex="1" />
+                                    <Label text="Total des Peintures" GridPane.rowIndex="2" />
+                                    <Label text="Autres" GridPane.rowIndex="3" />
+                                    <Label fx:id="lblTotalToles" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblTotalPeintures" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblTotalAutres" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblTotalItem" text="Label" GridPane.columnIndex="2">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblTotalSupplyer" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblTotalEmployee" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="40.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+                                    <ImageView fx:id="imageToles" fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <ImageView fx:id="imagepeinture" fitHeight="37.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <ImageView fx:id="imageautre" fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <ImageView fitHeight="40.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <ImageView fitHeight="40.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <FontAwesomeIconView fill="#00c2f2" glyphName="USER" size="30.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <FontAwesomeIconView fill="#00c2f2" glyphName="GROUP" size="30.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <FontAwesomeIconView fill="#00c2f2" glyphName="REFRESH" size="30.0" GridPane.columnIndex="3" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <bottom>
+            <AnchorPane prefHeight="85.0" prefWidth="683.0" style="-fx-border-color: #00c2f2; -fx-border-width: 5px 0px 0px 0px; -fx-bo: ;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

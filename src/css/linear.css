@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 janv. 2018, 12:31:33
+    Author     : Admin
+
+#79bebe
+*/
+
+.gradient{
+    -fx-background-color: linear-gradient( from 50% 0% to 50% 100%,#00c2f2,#ffffff);
+}

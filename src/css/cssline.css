@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 mars 2018, 08:31:34
+    Author     : Ralande
+*/
+
+.table-cell {
+    -fx-padding: 0.8em 0em 0.5em 0.3em;
+    -fx-border-color: transparent -fx-box-border transparent transparent;
+    -fx-font: 13px "Comic Sans MS";
+    -fx-font-weight: 700;
+    -fx-text-fill: #EA5444;
+    
+}
+

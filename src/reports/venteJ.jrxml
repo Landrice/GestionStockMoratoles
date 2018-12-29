@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9f629da-c79d-4ff2-9a25-5c1ec442125d">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="prixTotal" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM dml_produits,dgl_produits,dpt_produits,dpz_produits,dbl_produits,dml_vente, dgl_vente, dpt_vente, dpz_vente, dbl_vente WHERE $P{date}=dml_produits.Date_dml=dgl_produits.Date_dgl=dpt_produits.Date_dpt=dpz_produits.Date_dpz=dbl_produits.Date_dbl=dml_vente.DateDVente_dml =dbl_vente.DateDVente_dbl=dpt_vente.DateDVente_dpt=dpz_vente.DateDVente_dpz=dbl_vente.DateDVente_dbl]]>
+	</queryString>
+	<field name="Id_dml" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IdProduit_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NomProduit_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Quantite_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Description_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FounisseurId" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MarqueId" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CategorieId" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Prix_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="UtilisateurId_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date_dml" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Unite_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Id_dgl" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IdProduit_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NomProduit_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Quantite_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Description_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Prix_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="UtilisateurId_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date_dgl" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Unite_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Id_dpt" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IdProduit_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NomProduit_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Quantite_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Description_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Prix_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="UtilisateurId_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date_dpt" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Unite_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Id_dpz" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IdProduit_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NomProduit_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Quantite_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Description_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Prix_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="UtilisateurId_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date_dpz" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Unite_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Id_dbl" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="IdProduit_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NomProduit_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Quantite_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Description_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Prix_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="UtilisateurId_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Date_dbl" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Unite_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VenteId_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AcheteurId_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ProduitId_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TotalPrix_dml" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Garantie_dml" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DateDVente_dml" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VenteId_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AcheteurId_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ProduitId_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TotalPrix_dgl" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Garantie_dgl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DateDVente_dgl" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VenteId_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AcheteurId_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ProduitId_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TotalPrix_dpt" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Garantie_dpt" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DateDVente_dpt" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VenteId_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AcheteurId_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ProduitId_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TotalPrix_dpz" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Garantie_dpz" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DateDVente_dpz" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="VenteId_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AcheteurId_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ProduitId_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TotalPrix_dbl" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Garantie_dbl" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DateDVente_dbl" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="110" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="9" y="2" width="144" height="70" uuid="6365eb2f-00db-42e9-8f11-3aaabb680bef"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="416" y="25" width="137" height="20" uuid="99f8d1bc-480a-4afd-9c24-f246a45a16e0"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[VENTE JOURNALIERE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="32" width="143" height="13" uuid="8796e60c-a413-47fa-a637-e65d1b639d6d"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ANTSIRANANA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="18" width="143" height="14" uuid="f6f1592b-96e4-40cb-aad3-ebb20f350fd1"/>
+				<textElement textAlignment="Center">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Avenue Pasteur - Tél. 032 05 097 12]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="0" width="143" height="18" uuid="04d1442c-8e60-48e8-99f1-368ed9951c1a"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Quincaillerie MORATOLES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="416" y="5" width="27" height="20" uuid="457fa83a-cc1e-439a-8450-3bc9c9bb4662"/>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="45" width="142" height="11" uuid="34609dd9-26bb-45ad-9a54-68e47f26b792"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[              NIF: 4002562822                                      ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="56" width="143" height="16" uuid="e5403db2-c306-48e8-8f8d-f9310bf07c8f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[              Stat : 47521 71 1987 0 00007]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="443" y="5" width="100" height="20" uuid="b7895b23-0b14-43d5-8adb-8e36d6099f9f"/>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="83" width="53" height="25" uuid="01450262-dac6-4ba1-9362-1641a3be1894"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Réference]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="83" width="200" height="25" uuid="fd6b8037-bc50-4548-9bee-4e0f6748397b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Produits]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="258" y="83" width="48" height="25" uuid="4e45dedf-ddc6-4a19-a40a-fee286c4e6d9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Quantité]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="82" width="61" height="25" uuid="970c862f-5cc3-45ce-9253-b1c9ecb1e85e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Montant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="83" width="183" height="24" uuid="e1154a8c-c89a-42ca-ae41-d797ad937621"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Acheteur]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="83" width="550" height="1" uuid="86234720-2980-4825-a7d0-430f439bd942"/>
+			</line>
+			<line>
+				<reportElement x="1" y="84" width="1" height="24" uuid="1cb6a11d-a450-4210-a9af-7ab28392daaa"/>
+			</line>
+			<line>
+				<reportElement x="551" y="82" width="1" height="26" uuid="70afd5e3-fe3f-4e71-9c02-dc09e4cf07a3"/>
+			</line>
+			<line>
+				<reportElement x="55" y="84" width="1" height="24" uuid="95207e24-694a-4032-9aea-96c96adc30f1"/>
+			</line>
+			<line>
+				<reportElement x="305" y="85" width="1" height="22" uuid="b142d278-4632-471d-b959-fe3f4585265e"/>
+			</line>
+			<line>
+				<reportElement x="256" y="82" width="1" height="26" uuid="a8fb373c-430e-4c2c-97f9-0ffa94bcf72b"/>
+			</line>
+			<line>
+				<reportElement x="489" y="85" width="1" height="22" uuid="ed3525c6-dae1-41bc-8c58-ccacfc5484d6"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="551" height="1" uuid="413c942b-d53d-4100-b5ee-c9ec7c11be35"/>
+			</line>
+			<textField>
+				<reportElement x="3" y="1" width="53" height="25" uuid="dc72caea-ec75-4d98-ae5c-f692b918d1a3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{VenteId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="57" y="1" width="200" height="25" uuid="1864eef3-e189-4ef6-a38b-fe06b515f8a1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{NomProduit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="258" y="0" width="48" height="26" uuid="568c1546-2b97-4de0-ba3d-d96ac4754754"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Quantite}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="1" width="183" height="25" uuid="79c2f404-2062-4260-91ba-e0a865f4f1ca"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{NomAcheteur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="1" width="62" height="25" uuid="4e4f640d-ab0a-46c6-b641-ebe4a584193b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{TotalPrix}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="1" width="1" height="24" uuid="2956517e-1124-4a90-ad28-e02abb1a1520"/>
+			</line>
+			<line>
+				<reportElement x="57" y="2" width="1" height="24" uuid="44691e6c-5d63-44fb-b68b-e8a69ccc0160"/>
+			</line>
+			<line>
+				<reportElement x="255" y="2" width="1" height="24" uuid="04a9a0d0-527d-481e-8ba7-58d2885b5b57"/>
+			</line>
+			<line>
+				<reportElement x="307" y="2" width="1" height="24" uuid="8c5f195e-16b8-42f7-8578-82102969dd16"/>
+			</line>
+			<line>
+				<reportElement x="488" y="2" width="1" height="24" uuid="00328e31-40f9-43cc-b795-fc8218cefbe3"/>
+			</line>
+			<line>
+				<reportElement x="550" y="2" width="1" height="24" uuid="c9d09f4e-1931-49ce-a7e2-e45afb0e7da2"/>
+			</line>
+			<line>
+				<reportElement x="3" y="25" width="550" height="1" uuid="26d8840b-41d5-41d1-bbb4-311229f74d9a"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="27" splitType="Stretch">
+			<line>
+				<reportElement x="2" y="26" width="550" height="1" uuid="cc24ad6b-b117-4889-a801-c7b0691c0e73"/>
+			</line>
+			<line>
+				<reportElement x="1" y="3" width="1" height="24" uuid="fb00e17a-82ad-49a5-a157-757d50e6bb8f"/>
+			</line>
+			<line>
+				<reportElement x="551" y="3" width="1" height="24" uuid="a45f77a9-4be6-4d9d-b9fc-e4f49a00db38"/>
+			</line>
+			<line>
+				<reportElement x="487" y="3" width="1" height="24" uuid="62198ed2-d70a-4e12-9f8c-3f23009e4760"/>
+			</line>
+			<staticText>
+				<reportElement x="3" y="3" width="484" height="23" uuid="e2a76b9d-b140-4494-b8e5-e40efa4f63ba"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Prix Total du vente journalière]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="491" y="3" width="59" height="20" uuid="a8ad6674-4227-424a-ae28-421e27f6a96a"/>
+				<textFieldExpression><![CDATA[$P{prixTotal}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="2" y="2" width="550" height="1" uuid="a72c0c7e-0358-46db-b64a-be28977baee1"/>
+			</line>
+		</band>
+	</columnFooter>
+</jasperReport>

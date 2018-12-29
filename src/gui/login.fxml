@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="gradient" stylesheets="@../css/linear.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleurGui.LoginController">
+   <children>
+      <Hyperlink fx:id="creercompte" layoutX="402.0" layoutY="563.0" onAction="#createCompte" text="Creer un compte" />
+      <Hyperlink fx:id="pmbdd" layoutX="355.0" layoutY="528.0" onAction="#paramBd" text="Paramètres de la Base de Données" />
+      <Pane prefHeight="170.0" prefWidth="900.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="122.0" fitWidth="154.0" layoutX="36.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/OM.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="723.0" layoutY="37.0" text="Quincallerie MORATOLES">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="720.0" layoutY="57.0" text="Avenue Pasteur - Tél. 032 05 097 12">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="740.0" layoutY="73.0" text="ANTSIRANANA">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="740.0" layoutY="100.0" text="NIF: 4002562822" />
+            <Label layoutX="740.0" layoutY="117.0" text="Stat : 47521 71 1987 0 00007" />
+         </children>
+      </Pane>
+      <BorderPane fx:id="apMother" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="20.0">
+         <top>
+            <AnchorPane styleClass="gradient" stylesheets="@../css/linear.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="98.0" layoutY="-55.0" prefHeight="150.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="Gestionnaires des stocks">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="Se connecter">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <StackPane style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="50.0" style="-fx-background-color: white;" StackPane.alignment="CENTER">
+                     <children>
+                        <JFXTextField fx:id="FieldNom" alignment="CENTER" focusColor="#79bebe" labelFloat="true" onAction="#actConnecter" promptText="identifiant">
+                           <font>
+                              <Font name="Comic Sans MS" size="24.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="FieldPass" alignment="CENTER" focusColor="#79bebe" labelFloat="true" onAction="#actConnecter" promptText="Mot de passe">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </JFXPasswordField>
+                     </children>
+                     <padding>
+                        <Insets left="50.0" right="50.0" top="50.0" />
+                     </padding>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </VBox>
+               </children>
+            </StackPane>
+         </center>
+         <bottom>
+            <StackPane prefHeight="87.0" prefWidth="500.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <JFXButton fx:id="btnConnecter" alignment="CENTER" buttonType="RAISED" onAction="#actConnecter" prefHeight="58.0" prefWidth="123.0" ripplerFill="#00c2f2" style="-fx-border-color: #00c2f2;" text="Se connecter">
+                           <graphic>
+                              <FontAwesomeIconView fill="#00c2f2" glyphName="YELP" size="25" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </bottom>
+      </BorderPane>
+      <ImageView fx:id="numero" fitHeight="66.0" fitWidth="70.0" layoutX="816.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/cp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="num" layoutX="746.0" layoutY="566.0" text="© Copyright " />
+      <Label fx:id="nm" layoutX="793.0" layoutY="536.0" text="               ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
